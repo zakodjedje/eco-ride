@@ -1,0 +1,15 @@
+{
+  "name": "eco-ride",
+  "version": "1.0.0",
+  "description": "appli ecoride",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ISC",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
+  }
+}

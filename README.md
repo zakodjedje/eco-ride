@@ -2,8 +2,12 @@
 site test vitrine pour l'application ecoride
 
 # installation
-installation bootstrap via cdn
-ajout script link css, java, et icon
+installation bootstrap npm
+creation .gitignore
+ajout css, java, et icon
+creation dossier SCSS
+creation fichier _custom.css
+import@ du fichier _custom dans le fichier main.css 
 
 # création d'une branche
 git checkout -b developpement
