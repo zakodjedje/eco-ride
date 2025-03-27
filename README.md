@@ -11,3 +11,6 @@ import@ du fichier _custom dans le fichier main.css
 
 # création d'une branche
 git checkout -b developpement
+
+# etape
+changement variable couleur, variable police
