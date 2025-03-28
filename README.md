@@ -15,3 +15,4 @@ git checkout -b developpement
 # etape
 changement variable couleur, variable police
 header bootstrap
+footer/ appliquer une position relative au html, et une absolu au footer
