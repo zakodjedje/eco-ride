@@ -20,3 +20,19 @@ p{
     font-family: $font-family-serif;
     font-size: 18px;
 }
+
+.hero-scene{
+    background-image: url(../images/istockphoto-1179125140-1024x1024.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 70vh; /* Prend toute la hauteur de l'écran */
+    display: flex;
+    align-items: center;
+    justify-content: center
+
+
+ 
+}
+.hero-scene-content{
+    
+}

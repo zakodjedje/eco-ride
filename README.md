@@ -16,3 +16,4 @@ git checkout -b developpement
 changement variable couleur, variable police
 header bootstrap
 footer/ appliquer une position relative au html, et une absolu au footer
+faire la page acceuil mettre ne backgroun en cover et en center center
