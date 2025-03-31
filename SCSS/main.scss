@@ -25,7 +25,7 @@ p{
     background-image: url(../images/istockphoto-1179125140-1024x1024.jpg);
     background-size: cover;
     background-position: center center;
-    height: 70vh; /* Prend toute la hauteur de l'écran */
+    height: 50vh; /* Prend toute la hauteur de l'écran */
     display: flex;
     align-items: center;
     justify-content: center
@@ -33,6 +33,23 @@ p{
 
  
 }
-.hero-scene-content{
+.barre-recherche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    position: relative;
+    top: -100px;
     
+}
+
+.btn-primary{
+    width: auto;
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.bloc{
+    padding: 10px;
 }
