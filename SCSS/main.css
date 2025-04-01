@@ -12014,4 +12014,9 @@ p {
 
 .bloc {
   padding: 10px;
+}
+
+.card-img-top {
+  border-radius: 12px; /* Coins arrondis pour un effet moderne */
+  border: 3px solid #65DC6D; /* Bordure bleue (peut être modifiée) */
 }/*# sourceMappingURL=main.css.map */
