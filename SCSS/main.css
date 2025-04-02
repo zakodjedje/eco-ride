@@ -12019,4 +12019,16 @@ p {
 .card-img-top {
   border-radius: 12px; /* Coins arrondis pour un effet moderne */
   border: 3px solid #65DC6D; /* Bordure bleue (peut être modifiée) */
+}
+
+.container-cards {
+  max-width: 400px; /* Définit une largeur maximale similaire à un mobile */
+  margin: 0 auto; /* Centre le contenu horizontalement */
+}
+
+.card {
+  width: 100%; /* Prend toute la largeur définie par le conteneur */
+  margin-bottom: 20px; /* Ajoute un espace entre les cartes */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+  border-radius: 12px; /* Arrondit les coins pour un effet plus doux */
 }/*# sourceMappingURL=main.css.map */
