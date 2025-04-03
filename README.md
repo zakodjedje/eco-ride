@@ -19,3 +19,4 @@ footer/ appliquer une position relative au html, et une absolu au footer
 faire la page acceuil mettre ne backgroun en cover et en center center
 creer la page select covoit, intégré a allroutes, et remplacer les boutons qui redirige vers cette page
 intégre les cards qui vont représenté les profils des candidats
+on fait la page connexion signin, on ajoute la route dans allroutes

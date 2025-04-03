@@ -9,6 +9,9 @@ html{
 main{
     margin-bottom: 73px;
 }
+body{
+       background-color: rgb(255, 248, 238);
+}
 footer.footer{
 
     position: absolute;
@@ -25,6 +28,7 @@ p{
     background-image: url(../images/istockphoto-1179125140-1024x1024.jpg);
     background-size: cover;
     background-position: center center;
+ 
     height: 50vh; /* Prend toute la hauteur de l'écran */
     display: flex;
     align-items: center;
