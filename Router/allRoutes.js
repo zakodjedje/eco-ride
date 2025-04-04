@@ -5,6 +5,7 @@ export const allRoutes = [
     new Route("/selectcovoit", "Selection", "/pages/selectcovoit.html"),
     new Route("/signin", "connexion", "/pages/signin.html"),
     new Route("/signup", "inscription", "/pages/signup.html"),
+    new Route("/account", "mon compte", "/pages/account.html"),
 ];
 //Le titre s'affiche comme ceci : Route.titre - websitename
 export const websiteName = "EcoRide";

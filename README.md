@@ -21,3 +21,4 @@ creer la page select covoit, intégré a allroutes, et remplacer les boutons qui
 intégre les cards qui vont représenté les profils des candidats
 on fait la page connexion signin, on ajoute la route dans allroutes
 on fait la page connexion signup, on ajoute la route dans allroutes
+creation de la page espaces mon compte
