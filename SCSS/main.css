@@ -12016,6 +12016,12 @@ p {
   text-align: center;
 }
 
+.btn-primary2 {
+  width: auto;
+  display: inline-block;
+  text-align: center;
+}
+
 .bloc {
   padding: 10px;
 }

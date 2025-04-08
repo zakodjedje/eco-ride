@@ -25,3 +25,6 @@ creation de la page espaces mon compte avec tout les paramettres
 creation de la page covoiturage avec sa barre de recherche 
 creation de la page detail covoit
 ajout modale sur page detail convoit
+complété une fonctionnalité de la page mon compte, (demarage d'une course) et rajouter une modale pour le -2 credit + liste de vehicule
+page historique covoit "tout mes covoit"
+page de fin de trajet

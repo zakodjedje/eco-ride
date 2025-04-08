@@ -1,0 +1,47 @@
+<h1 class="text-center">Trajet terminé</h1>
+
+
+
+<div class="container">
+    <form>
+
+
+        <div class="mb-3">
+            <label for="voyageInput" class="form-label">Comment avez-vous trouvé votre Trajet ?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="role" id="excellent">
+                <label class="form-check-label" for="excellent">
+                  excellent 
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="role" id="correct" checked>
+                <label class="form-check-label" for="correct">
+                  correct
+                </label>            
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="role" id="désagreable" checked>
+                <label class="form-check-label" for="désagreable">
+                  désagreable
+                </label>            
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="noteInput" class="form-label">Notez (de 1 à 10)</label>
+            <input type="number" class="form-control" id="noteInput" min="1" max="10" step="1" placeholder="Entrez une note entre 1 et 10">
+          </div>
+          <div class="mb-3">
+            <label for="avisClient" class="form-label">Votre avis compte</label>
+            <textarea class="form-control" id="avisClient" rows="3" placeholder="Laissez votre avis ici..."></textarea>
+          </div>
+          
+        </div>
+      
+        <div class="text-center">
+        <a href="/"type="submit" class="btn btn-primary">enregistré</a> 
+        </div>
+        <br>
+       
+      </form>
+    </div>

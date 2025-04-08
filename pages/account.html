@@ -26,6 +26,7 @@
         <option value="2">2</option>
         <option value="3">3</option>
       </select>
+     
 <br>
 
  
@@ -43,8 +44,19 @@
             <span class="input-group-text">marque</span>
         <input type="text" class="form-control" placeholder="Username" aria-label="Username"> 
       </div>
+      <button type="button" class="btn btn-dark">ajouter le vehicule</button>
       </div>
-      
+      <br>
+      <div class="list-group">
+        <h6>mes véhicules</h6>
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          renault capture
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">nissan juke</a>
+     
+      </div>
+      <br>
+      <br>
       <div class="form-check">
         <h6>préférence</h6>
         <br>
@@ -72,4 +84,59 @@
           animaux non autorisé
         </label>
       </div>
- 
+      <br>
+      <h5>demarrer une course ?</h5>
+      <div class="container">
+        <form>
+            <div class="mb-3">
+                <label for="départInput" class="form-label">départ</label>
+              <input type="text" class="form-control" id="PseudoInput" placeholder=" lieu de départ" >
+              <div class="mb-3">
+              <div class="mb-3">
+                <label for="arrivéInput" class="form-label">arrivé</label>
+                <input type="tel" class="form-control" id="arrivéInput" placeholder="lieu d'arrivé" >
+                
+              </div>
+              <div class="mb-3">
+                <label for="PrixInput" class="form-label">Prix</label>
+                <input type="number" class="form-control" id="PrixInput">
+              </div>
+            </div>
+            <div>
+            <select class="form-select form-select-sm" aria-label="Small select example">
+              <option selected>selectionné votre véhicule</option>
+              <option value="1">renault capture</option>
+              <option value="2">nissan juke</option>
+    
+            </select>
+            </div>
+            <br>
+          
+            <div class="text-center">
+            <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#creditmoindeux" >recherchez</button> 
+            </div>
+            <br>
+
+
+
+
+            
+       
+              <!-- Modal -->
+              <div class="modal fade" id="creditmoindeux" tabindex="-1" aria-labelledby="creditmoindeuxlLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="creditmoindeuxlLabel">covoiturage</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      La validation entrainera l'utilisation de 2 crédit
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fermer</button>
+                      <button type="button" class="btn btn-primary">valider</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
