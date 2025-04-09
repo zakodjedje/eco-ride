@@ -28,3 +28,4 @@ ajout modale sur page detail convoit
 complété une fonctionnalité de la page mon compte, (demarage d'une course) et rajouter une modale pour le -2 credit + liste de vehicule
 page historique covoit "tout mes covoit"
 page de fin de trajet
+page des avis deposé avec card et detail de precision de course avec la modal detail
