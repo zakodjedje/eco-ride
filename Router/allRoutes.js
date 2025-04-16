@@ -4,7 +4,7 @@ export const allRoutes = [
     new Route("/", "Accueil", "/pages/home.html"),
     new Route("/selectcovoit", "Selection", "/pages/selectcovoit.html"),
     new Route("/signin", "connexion", "/pages/signin.html"),
-    new Route("/signup", "inscription", "/pages/signup.html"),
+    new Route("/signup", "inscription", "/pages/signup.html","/js/auth/signup.js"),
     new Route("/account", "mon compte", "/pages/account.html"),
     new Route("/covoiturage", "covoiturage", "/pages/covoiturage.html"),
     new Route("/detailCovoit", "detail", "/pages/detailCovoit.html"),

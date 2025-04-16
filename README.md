@@ -30,3 +30,4 @@ page historique covoit "tout mes covoit"
 page de fin de trajet
 page des avis deposé avec card et detail de precision de course avec la modal detail
 page administrateur, avec graphique et gestion compte employer
+vérification des champ de formulaire avec JS PAGE SIGNUP/ cree dossier js et dossier auth, puis fichier signup.js
