@@ -29,3 +29,4 @@ complété une fonctionnalité de la page mon compte, (demarage d'une course) et
 page historique covoit "tout mes covoit"
 page de fin de trajet
 page des avis deposé avec card et detail de precision de course avec la modal detail
+page administrateur, avec graphique et gestion compte employer
