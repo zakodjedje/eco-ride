@@ -32,3 +32,4 @@ page des avis deposé avec card et detail de precision de course avec la modal d
 page administrateur, avec graphique et gestion compte employer
 vérification des champ de formulaire avec JS PAGE SIGNUP/ cree dossier js et dossier auth, puis fichier signup.js
 spécification de champ de formulaire email, regex et foncton validateMail
+desactivation du button inscription si champs non remplis, rajoue du return dans les fonctions, pour recuperer les boolens des champs
