@@ -13,11 +13,18 @@
       <div class="mb-3">
         <label for="PasswordInput" class="form-label">Mot de passe</label>
         <input type="password" class="form-control" id="PasswordInput">
+        <div class="invalid-feedback">
+            votre mot de passe ne contient pas les caractères requis : 12 caractère minimum ,au moin une majuscule et minuscule 
+        </div>
+       
       </div>
     </div>
     <div class="mb-3">
       <label for="ValidatePasswordInput" class="form-label"> Confirmer mot de passe</label>
       <input type="password" class="form-control" id="ValidatePasswordInput">
+      <div class="invalid-feedback">
+        Le mot de passe n'est pas identique
+    </div>
     </div>
     <div class="text-center">
     <button type="submit" class="btn btn-primary" id="btn-validationInscription">validez et obtenez 20 credit</button>
