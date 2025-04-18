@@ -34,3 +34,4 @@ vérification des champ de formulaire avec JS PAGE SIGNUP/ cree dossier js et do
 spécification de champ de formulaire email, regex et foncton validateMail
 desactivation du button inscription si champs non remplis, rajoue du return dans les fonctions, pour recuperer les boolens des champs, class feed-back ajouté html
 confirmation du champ confirmation mot de passe en js
+mettre en place un systeme de connexion en dur, creation page signin.js
