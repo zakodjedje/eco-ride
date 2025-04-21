@@ -10,6 +10,8 @@ function checkInfo(){
         const token ="aaa222"
         setToken(token);
 
+        setCookie(RoleCookieName,"admin", 7)
+
         window.location.replace("/");
     }
     else {
@@ -18,17 +20,3 @@ function checkInfo(){
     }
 }
 
-function isConnected(name){
-    if(getToken()==null || getToken ==undefined){
-        return false;
-    }
-    else{
-        return true;
-    }
-}
-
-if (isConnected()){
-    alert ("je suis conecté")
-}else{
-    alert ("je ne suis APPP connectEX")
-}

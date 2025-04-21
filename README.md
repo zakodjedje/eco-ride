@@ -36,4 +36,6 @@ desactivation du button inscription si champs non remplis, rajoue du return dans
 confirmation du champ confirmation mot de passe en js
 mettre en place un systeme de connexion en dur, creation page signin.js
 creation fichier script.js pour gerer les cookies/ creation function getToken, setToken
-implémentation pour savoir si on es connecté, function isConnected
+implémentation pour savoir si on es connecté, function isConnected*
+implémentation décconexion, en supprimant le cookie accestoken
+affichage du bouton conenxion deconnexion en function de l'etat de connexion : les roles, visiteur utilisateur employer adminitstrateur data-show
