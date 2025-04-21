@@ -6,8 +6,9 @@ btnSingin.addEventListener("click", checkInfo);
 
 function checkInfo(){
     if(mailInput.value == "zakodjedje@gmail.com" && passwordInput.value=="123"){
-        alert ("vous etes connected")
-        const token ="aaa"
+       
+        const token ="aaa222"
+        setToken(token);
 
         window.location.replace("/");
     }
@@ -15,4 +16,19 @@ function checkInfo(){
         mailInput.classList.add("is-invalid")
         passwordInput.classList.add("is-invalid")
     }
+}
+
+function isConnected(name){
+    if(getToken()==null || getToken ==undefined){
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+
+if (isConnected()){
+    alert ("je suis conecté")
+}else{
+    alert ("je ne suis APPP connectEX")
 }
