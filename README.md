@@ -39,3 +39,4 @@ creation fichier script.js pour gerer les cookies/ creation function getToken, s
 implémentation pour savoir si on es connecté, function isConnected*
 implémentation décconexion, en supprimant le cookie accestoken
 affichage du bouton conenxion deconnexion en function de l'etat de connexion : les roles, visiteur utilisateur employer adminitstrateur data-show
+gerer les failles de sécurité d'acces a certaine page sans author
