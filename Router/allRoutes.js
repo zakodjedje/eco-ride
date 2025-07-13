@@ -14,4 +14,4 @@ export const allRoutes = [
     new Route("/admin", "administrateur", "/pages/admin.html",["admin"]),
 ];
 //Le titre s'affiche comme ceci : Route.titre - websitename
-export const websiteName = "EcoRide";
+export const websiteName = "EcoRide"; 
