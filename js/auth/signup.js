@@ -89,3 +89,36 @@ function validateRequired(input){
         return false;
     }
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("form-inscription");
+  if (!form) return; // protection en cas d'erreur
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    const response = await fetch("http://localhost:8000/user.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+
+    const result = await response.json();
+    const msgDiv = document.getElementById("form-messages");
+    msgDiv.innerHTML = "";
+
+    if (result.success) {
+      msgDiv.innerHTML = `<div class="alert alert-success">Inscription réussie !</div>`;
+      form.reset();
+    } else {
+      for (const [field, message] of Object.entries(result.errors)) {
+        msgDiv.innerHTML += `<div class="alert alert-danger">${field} : ${message}</div>`;
+      }
+    }
+  });
+});
