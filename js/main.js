@@ -6,4 +6,3 @@ fetch('http://localhost:8000/api/trips.php')
   .catch(error => {
   console.error("Erreur :", error);
   });
-
