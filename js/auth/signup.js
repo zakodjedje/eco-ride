@@ -1,4 +1,5 @@
 const inputPseudo = document.getElementById("PseudoInput");
+const inputFirstname = document.getElementById("FirstnameInput");
 const inputEmail = document.getElementById("EmailInput");
 const inputPassword = document.getElementById("PasswordInput");
 const inputValidatePassword = document.getElementById("ValidatePasswordInput");
@@ -6,6 +7,7 @@ const btnValidation = document.getElementById("btn-validationInscription");
 
 
 inputPseudo.addEventListener("keyup",validateForm);
+inputFirstname.addEventListener("keyup", validateForm);
 inputEmail.addEventListener("keyup",validateForm);
 inputPassword.addEventListener("keyup",validateForm);
 inputValidatePassword.addEventListener("keyup",validateForm);
@@ -13,14 +15,16 @@ inputValidatePassword.addEventListener("keyup",validateForm);
 
 function validateForm(){
     const pseudoOk = validateRequired(inputPseudo)
+    const firstnameOk = validateRequired(inputFirstname);
     const emailOk =validateRequired(inputEmail)
     const mailOk =validateMail(inputEmail)
     const passwordOk = validatePassword(inputPassword)
     const confirmePasswordOk =validateConfirmationPassword(inputPassword,inputValidatePassword)
     
 
-    if (pseudoOk && emailOk && mailOk && passwordOk&& confirmePasswordOk){
+    if (pseudoOk && firstnameOk && emailOk && mailOk && passwordOk&& confirmePasswordOk){
         btnValidation.disabled=false;
+        window.location.href = "/";
     }
     else {
         btnValidation.disabled=true;
@@ -99,6 +103,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
+    console.log("Données envoyées :", data);
 
     const response = await fetch("http://localhost:8000/user.php", {
       method: "POST",
