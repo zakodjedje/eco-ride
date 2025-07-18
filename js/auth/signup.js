@@ -93,6 +93,10 @@ function validateRequired(input){
         return false;
     }
 }
+
+
+
+
 function initInscriptionForm() {
   const form = document.getElementById("form-inscription");
   if (!form) {
@@ -122,6 +126,7 @@ function initInscriptionForm() {
       console.log("Réponse back :", data);
       if (data.success) {
         alert("✅ Utilisateur ajouté avec succès !");
+        window.location.href = "/";
       } else {
         alert("❌ Erreur : " + JSON.stringify(data.errors || data.message));
       }
