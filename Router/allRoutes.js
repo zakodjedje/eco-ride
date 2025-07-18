@@ -5,7 +5,7 @@ export const allRoutes = [
     new Route("/selectcovoit", "Selection", "/pages/selectcovoit.html",[]),
     new Route("/signin", "connexion", "/pages/signin.html",["disconnected"],"/js/auth/signin.js"),
     new Route("/signup", "inscription", "/pages/signup.html",["disconnected"],"/js/auth/signup.js"),
-    new Route("/account", "mon compte", "/pages/account.html",["employer", "utilisateur"]),
+    new Route("/account", "mon compte", "/pages/account.html",["utilisateur", "employer"]),
     new Route("/covoiturage", "covoiturage", "/pages/covoiturage.html",[]),
     new Route("/detailCovoit", "detail", "/pages/detailCovoit.html",[],""),
     new Route("/mesCovoits", "Mes covoits", "/pages/mesCovoits.html",["utilisateur","employer"]),

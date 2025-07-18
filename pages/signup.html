@@ -1,44 +1,58 @@
-
-
 <h1 class="text-center">Inscription</h1>
 <div class="container">
-<form id="form-inscription">
-    <div class="mb-3">
-        <label for="PseudoInput" class="form-label">Nom</label>
-      <input type="text" class="form-control" id="PseudoInput" placeholder=" Votre nom" name="username" >
-      <div class="mb-3">
-        <div class="mb-3">
-  <label for="FirstnameInput" class="form-label">Prénom</label>
-  <input type="text" class="form-control" id="FirstnameInput" name="firstname" placeholder="Votre prénom">
-</div>
 
-      <div class="mb-3">
-        <label for="EmailInput" class="form-label">Email</label>
-        <input type="email" class="form-control" id="EmailInput" placeholder="aaa@bbb.com" name="email" >
-        
-      </div>
-      <div class="mb-3">
-        <label for="PasswordInput" class="form-label">Mot de passe</label>
-        <input type="password" class="form-control" id="PasswordInput" name="password">
-        <div class="invalid-feedback">
-            votre mot de passe ne contient pas les caractères requis : 12 caractère minimum ,au moin une majuscule et minuscule 
-        </div>
-       
+
+  <form id="form-inscription" method="post">
+
+    <div class="mb-3">
+      <label for="PseudoInput" class="form-label">Nom</label>
+      <input type="text" class="form-control" id="PseudoInput" name="username" placeholder="Votre nom">
+    </div>
+
+    <div class="mb-3">
+      <label for="FirstnameInput" class="form-label">Prénom</label>
+      <input type="text" class="form-control" id="FirstnameInput" name="firstname" placeholder="Votre prénom">
+    </div>
+
+    <div class="mb-3">
+      <label for="EmailInput" class="form-label">Email</label>
+      <input type="email" class="form-control" id="EmailInput" name="email" placeholder="aaa@bbb.com">
+    </div>
+
+    <div class="mb-3">
+      <label for="PasswordInput" class="form-label">Mot de passe</label>
+      <input type="password" class="form-control" id="PasswordInput" name="password">
+      <div class="invalid-feedback">
+        Votre mot de passe ne contient pas les caractères requis : 12 caractères minimum, au moins une majuscule et une minuscule
       </div>
     </div>
+
     <div class="mb-3">
-      <label for="ValidatePasswordInput" class="form-label"> Confirmer mot de passe</label>
+      <label for="ValidatePasswordInput" class="form-label">Confirmer mot de passe</label>
       <input type="password" class="form-control" id="ValidatePasswordInput">
       <div class="invalid-feedback">
         Le mot de passe n'est pas identique
+      </div>
     </div>
-    </div>
+     <select id="role">
+    <option value="user">User</option>
+    <option value="admin">Admin</option>
+  </select>
     <div class="text-center">
-    <button type="submit" class="btn btn-primary" id="btn-validationInscription">validez et obtenez 20 credit</button>
+      <button type="submit" class="btn btn-primary" id="btn-validationInscription" disabled>
+        Validez et obtenez 20 crédits
+      </button>
     </div>
+    
+
+
     <br>
     <div class="text-center">
-        <a href="/signin"> Vous avez déja un compte ? cliquer ici </a>
-        </div>
+      <a href="/signin">Vous avez déjà un compte ? Cliquez ici</a>
+    </div>
   </form>
+
+  
 </div>
+<script src="js/main.js"></script>
+<script src="js/auth/script.js"></script>

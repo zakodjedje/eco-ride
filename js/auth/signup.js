@@ -24,7 +24,7 @@ function validateForm(){
 
     if (pseudoOk && firstnameOk && emailOk && mailOk && passwordOk&& confirmePasswordOk){
         btnValidation.disabled=false;
-        window.location.href = "/";
+        
     }
     else {
         btnValidation.disabled=true;
@@ -93,37 +93,44 @@ function validateRequired(input){
         return false;
     }
 }
-
-window.addEventListener("DOMContentLoaded", () => {
+function initInscriptionForm() {
   const form = document.getElementById("form-inscription");
-  if (!form) return; // protection en cas d'erreur
+  if (!form) {
+    console.warn("Formulaire d'inscription introuvable !");
+    return;
+  }
 
-  form.addEventListener("submit", async function (e) {
+  form.addEventListener("submit", function(e) {
     e.preventDefault();
+    // Ton code fetch ici, ou appel d’une autre fonction
+    // Récupération des données du formulaire
+    const userData = {
+      username: form.querySelector("#PseudoInput").value,
+      firstname: form.querySelector("#FirstnameInput").value,
+      email: form.querySelector("#EmailInput").value,
+      password: form.querySelector("#PasswordInput").value,
+      role: form.querySelector("#role").value
+    };
 
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
-    console.log("Données envoyées :", data);
-
-    const response = await fetch("http://localhost:8000/user.php", {
+    fetch("http://localhost:8000/add-user.php", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data)
-    });
-
-    const result = await response.json();
-    const msgDiv = document.getElementById("form-messages");
-    msgDiv.innerHTML = "";
-
-    if (result.success) {
-      msgDiv.innerHTML = `<div class="alert alert-success">Inscription réussie !</div>`;
-      form.reset();
-    } else {
-      for (const [field, message] of Object.entries(result.errors)) {
-        msgDiv.innerHTML += `<div class="alert alert-danger">${field} : ${message}</div>`;
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(userData)
+    })
+    .then(res => res.json())
+    .then(data => {
+      console.log("Réponse back :", data);
+      if (data.success) {
+        alert("✅ Utilisateur ajouté avec succès !");
+      } else {
+        alert("❌ Erreur : " + JSON.stringify(data.errors || data.message));
       }
-    }
+    })
+    .catch(err => {
+      alert("❌ Erreur de communication : " + err);
+    });
   });
-});
+}
+
+// Appelle cette fonction immédiatement à la fin du fichier inscription.js :
+initInscriptionForm();
