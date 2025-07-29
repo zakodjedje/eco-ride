@@ -21,8 +21,10 @@ function connexionForm(){
     
 
     // Envoi de la requête au back
+  
     fetch("http://localhost:8000/verify-user.php", {
       method: "POST",
+      credentials: "include",
       headers: {
         "Content-Type": "application/json"
       },
@@ -33,10 +35,9 @@ function connexionForm(){
         console.log("🔁 Réponse du back :", data);
 
         if (data.success) {
-          alert("✅ Connexion réussie !");
+          alert("✅ Connexion réussiiiiiiiiie !");
           
-          // Sauvegarde des infos utilisateur (optionnel selon ton système)
-          localStorage.setItem("connectedUser", JSON.stringify(data.user));
+       
           
           // Redirection vers la page d'accueil
           window.location.href = "/";

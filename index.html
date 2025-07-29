@@ -39,12 +39,19 @@
                   <li class="nav-item">
                     <a class="nav-link active"href="#">Nous contacter</a>
                   </li>
-                  <li class="nav-item" data-show="disconnected">
-                    <a class="nav-link "href="/signin">Connexion</a>
-                  </li>
-                  <li class="nav-item"data-show="connected">
-                    <button class="nav-link" id="signout-btn">Déconnexion</a>
-                  </li>
+                  
+<li class="nav-item" id="user-info" data-show="connected" style="display: none;">
+  <span class="nav-link" id="username-display"></span>
+</li>
+
+                <li class="nav-item" id="login-link" data-show="disconnected" style="display: none;">
+  <a class="nav-link" href="/signin">Connexion</a>
+</li>
+
+          <li class="nav-item" id="signout-container" data-show="diconnected" style="display: none;">
+  <button id="signout-btn">Déconnexion</button>
+</li>
+
                 </ul>
             
               </div>
