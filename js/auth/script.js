@@ -122,25 +122,30 @@ function showAndHideElementsForRoles() {
 document.addEventListener("DOMContentLoaded", () => {
   fetch("http://localhost:8000/session-user.php", {
     method: "GET",
-    credentials: "include"  // Pour envoyer le cookie de session
+    credentials: "include"
   })
-    .then(res => {
-      console.log("réponse brute:", res);
-      return res.json();
-    })
+    .then(res => res.json())
     .then(data => {
       console.log("🔁 Réponse JSON :", data);
+
       if (data.connected) {
-        const user = data.user;
+        // On considère l'utilisateur comme connecté, donc on peut forcer un token en cookie
+        setToken("true"); // juste une valeur repère
+        setCookie("role", data.user.role || "utilisateur", 7);
+
+        // Affichage nom utilisateur
         const userInfo = document.getElementById("user-info");
         if (userInfo) {
           userInfo.style.display = "block";
-          document.getElementById("username-display").textContent = `Bienvenue, ${user.username}`;
+          document.getElementById("username-display").textContent = `Bienvenue, ${data.user.username}`;
         }
 
         const loginLink = document.getElementById("login-link");
         if (loginLink) loginLink.style.display = "none";
       } else {
+        eraseCookie("accesstoken");
+        eraseCookie("role");
+
         const userInfo = document.getElementById("user-info");
         if (userInfo) userInfo.style.display = "none";
 
@@ -148,6 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (loginLink) loginLink.style.display = "block";
       }
 
+      // ➜ Met à jour les éléments dynamiques (connexion/déconnexion)
       showAndHideElementsForRoles();
     })
     .catch(err => {

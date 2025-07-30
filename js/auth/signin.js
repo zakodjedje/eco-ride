@@ -36,7 +36,12 @@ function connexionForm(){
 
         if (data.success) {
           alert("✅ Connexion réussiiiiiiiiie !");
-          
+             const userInfo = document.getElementById("user-info");
+          if (userInfo) {
+            userInfo.style.display = "block";
+            document.getElementById("username-display").textContent = `Bienvenue, ${data.user.username}`;
+          }
+    showAndHideElementsForRoles(); // p
        
           
           // Redirection vers la page d'accueil
