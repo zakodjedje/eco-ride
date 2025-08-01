@@ -43,16 +43,20 @@ const LoadContentPage = async () => {
   // Récupération du contenu HTML de la route
   const html = await fetch(actualRoute.pathHtml).then((data) => data.text());
   // Ajout du contenu HTML à l'élément avec l'ID "main-page"
+  
   document.getElementById("main-page").innerHTML = html;
-  // Ajout du contenu JavaScript
-  if (actualRoute.pathJS != "") {
-    // Création d'une balise script
-    var scriptTag = document.createElement("script");
-    scriptTag.setAttribute("type", "text/javascript");
-    scriptTag.setAttribute("src", actualRoute.pathJS);
-    // Ajout de la balise script au corps du document
-    document.querySelector("body").appendChild(scriptTag);
-  }
+
+if (actualRoute.pathJS) {
+  import(actualRoute.pathJS).then(module => 
+    {
+    if (actualRoute.url === "/covoiturage" 
+      && typeof module.initCovoiturage === "function") {
+      module.initCovoiturage();
+    }
+  });
+}
+
+
   // Changement du titre de la page
   document.title = actualRoute.title + " - " + websiteName;
 

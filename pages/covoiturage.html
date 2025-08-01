@@ -1,40 +1,45 @@
 <h1 class="text-center">Covoiturage</h1>
 
 <div class="container">
-    <div class="mb-3">
-      <label for="filterType" class="form-label">Filtrer par</label>
-      <select id="filterType" class="form-select">
-        <option value="all">Tous</option>
-        <option value="price">Prix &lt;= 15€</option>
-        <option value="note">Note &gt;= 8</option>
-      </select>
-    </div>
+  <div class="mb-3">
+    <label for="filterType" class="form-label">Filtrer par</label>
+    <select id="filterType" class="form-select">
+      <option value="all">Tous</option>
+      <option value="price">Prix &lt;= 15€</option>
+      <option value="note">Note &gt;= 8</option>
+    </select>
   </div>
-  
 
-
+  <div class="mb-3">
+    <label for="role" class="form-label">Rôle</label>
+    <select id="role" class="form-select">
+      <option value="user">User</option>
+      <option value="driver">Conducteur</option>
+    </select>
+  </div>
+</div>
+<br>
 
 <div class="container">
-    <form>
-        <div class="mb-3">
-            <label for="départInput" class="form-label">départ</label>
-          <input type="text" class="form-control" id="PseudoInput" placeholder=" lieu de départ" >
-          <div class="mb-3">
-          <div class="mb-3">
-            <label for="arrivéInput" class="form-label">arrivé</label>
-            <input type="tel" class="form-control" id="arrivéInput" placeholder="lieu d'arrivé" >
-            
-          </div>
-          <div class="mb-3">
-            <label for="dateInput" class="form-label">date</label>
-            <input type="date" class="form-control" id="dateInput">
-          </div>
-        </div>
-      
-        <div class="text-center">
-        <a href="/selectcovoit"type="submit" class="btn btn-primary">recherche</a> 
-        </div>
-        <br>
-       
-      </form>
+  <form id="form-covoiturage">
+    <div class="mb-3">
+      <label for="PseudoInput" class="form-label">Départ</label>
+      <input type="text" class="form-control" id="PseudoInput" placeholder="Lieu de départ">
     </div>
+
+    <div class="mb-3">
+      <label for="arrivéInput" class="form-label">Arrivée</label>
+      <input type="text" class="form-control" id="arrivéInput" placeholder="Lieu d'arrivée">
+    </div>
+
+    <div class="mb-3">
+      <label for="dateInput" class="form-label">Date</label>
+      <input type="date" class="form-control" id="dateInput">
+    </div>
+
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary">Rechercher</button>
+    </div>
+    <br>
+  </form>
+</div>
