@@ -24,6 +24,7 @@ export function initCovoiturage() {
         console.log("📦 Réponse du serveur :", response);
         if (response.success) {
           alert("✅ chauffeur trouvé !!");
+           window.location.href = "selectcovoit";
         } else {
           alert("❌ pas de chauffeur disponible");
         }
