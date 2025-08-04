@@ -17,7 +17,7 @@ document.addEventListener("click", function(e) {
       if (response.connected) {
         alert("✅ crédit retiré");
         // Fermeture du modal Bootstrap
-        const modalEl = document.getElementById("credit-valide");
+        const modalEl = document.getElementById("creditvalidé");
         if (modalEl) {
           const modal = bootstrap.Modal.getInstance(modalEl);
           if (modal) modal.hide();

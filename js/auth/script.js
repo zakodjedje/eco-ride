@@ -132,6 +132,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // On considère l'utilisateur comme connecté, donc on peut forcer un token en cookie
         setToken("true"); // juste une valeur repère
         setCookie("role", data.user.role || "utilisateur", 7);
+        sessionStorage.setItem("user_id", data.user.id); // <-- C'est ça qu’il manque
+
 
         // Affichage nom utilisateur
         const userInfo = document.getElementById("user-info");

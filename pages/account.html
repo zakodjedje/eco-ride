@@ -15,46 +15,52 @@
     </label>
 </div>
 <br>
-  
+  <form id="vehicule-section">
+    <div class="mb-3 mt-7">
+    <label for="basic-url" class="form-label">Ajout véhicule</label>
   <div class="input-group input-group-sm mb-3">
     <span class="input-group-text" id="inputGroup-sizing-sm">date premiere immatriculation</span>
     <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
   </div>
-    <select class="form-select form-select-sm" aria-label="Small select example">
-        <option selected>Nombre de place disponible</option>
+    <select class="form-select form-select-sm" id="nombrePlace-car" aria-label="Small select example">
+        <option value="" disabled selected>Nombre de place disponible</option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
       </select>
      
 <br>
+    <div class="input-group">
+      <span class="input-group-text" id="basic-addon3">modèle</span>
+      <input type="text" class="form-control" id="modele-car" aria-describedby="basic-addon3 basic-addon4">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">couleur</span>
+      <input type="text" class="form-control" id="couleur-car"placeholder="" aria-label="Username"> 
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">marque</span>
+      <input type="text" class="form-control" id="marque-car"placeholder="" aria-label="Username"> 
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">immatriculation</span>
+      <input type="text" class="form-control" id="immatriculation-car"placeholder="" aria-label="Username"> 
+    </div>
+    <button type="submit" class="btn btn-dark">ajouter le vehicule</button>
+  </div>
+</form>
 
- 
-      
-      <div class="mb-3 mt-7">
-        <label for="basic-url" class="form-label">Ajout véhicule</label>
-        <div class="input-group">
-          <span class="input-group-text" id="basic-addon3">modèle</span>
-          <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
-        </div>
-        <div class="input-group mb-3">
-            <span class="input-group-text">couleur</span>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username"> 
-        <div class="input-group mb-3">
-            <span class="input-group-text">marque</span>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username"> 
-      </div>
-      <button type="button" class="btn btn-dark">ajouter le vehicule</button>
-      </div>
-      <br>
-      <div class="list-group">
-        <h6>mes véhicules</h6>
-        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-          renault capture
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">nissan juke</a>
-     
-      </div>
+
+
+
+
+  <div class="list-group">
+    <br>
+    <h6>mes véhicules</h6>
+    <a href="#" class="list-group-item list-group-item-action active">renault capture</a>
+    <a href="#" class="list-group-item list-group-item-action">nissan juke</a>
+  </div>
+</div>
       <br>
       <br>
       <div class="form-check">

@@ -57,6 +57,7 @@ if (actualRoute.pathJS) {
 }
 
 
+
   // Changement du titre de la page
   document.title = actualRoute.title + " - " + websiteName;
 
