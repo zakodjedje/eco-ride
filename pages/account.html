@@ -15,7 +15,7 @@
     </label>
 </div>
 <br>
-  <form id="vehicule-section">
+  <form id="form-ajout-car">
     <div class="mb-3 mt-7">
     <label for="basic-url" class="form-label">Ajout véhicule</label>
   <div class="input-group input-group-sm mb-3">
@@ -32,19 +32,19 @@
 <br>
     <div class="input-group">
       <span class="input-group-text" id="basic-addon3">modèle</span>
-      <input type="text" class="form-control" id="modele-car" aria-describedby="basic-addon3 basic-addon4">
+      <input type="text" class="form-control" name ="model"id="modele-car" aria-describedby="basic-addon3 basic-addon4">
     </div>
     <div class="input-group mb-3">
       <span class="input-group-text">couleur</span>
-      <input type="text" class="form-control" id="couleur-car"placeholder="" aria-label="Username"> 
+      <input type="text" class="form-control" name="color"id="couleur-car"placeholder="" aria-label="Username"> 
     </div>
     <div class="input-group mb-3">
       <span class="input-group-text">marque</span>
-      <input type="text" class="form-control" id="marque-car"placeholder="" aria-label="Username"> 
+      <input type="text" class="form-control" name ="brand"id="marque-car"placeholder="" aria-label="Username"> 
     </div>
     <div class="input-group mb-3">
       <span class="input-group-text">immatriculation</span>
-      <input type="text" class="form-control" id="immatriculation-car"placeholder="" aria-label="Username"> 
+      <input type="text" class="form-control" name="immatriculation" id="immatriculation-car"placeholder="" aria-label="Username"> 
     </div>
     <button type="submit" class="btn btn-dark">ajouter le vehicule</button>
   </div>
@@ -91,38 +91,41 @@
         </label>
       </div>
       <br>
-      <h5>demarrer une course ?</h5>
-      <div class="container">
-        <form>
-            <div class="mb-3">
-                <label for="départInput" class="form-label">départ</label>
-              <input type="text" class="form-control" id="PseudoInput" placeholder=" lieu de départ" >
-              <div class="mb-3">
-              <div class="mb-3">
-                <label for="arrivéInput" class="form-label">arrivé</label>
-                <input type="tel" class="form-control" id="arrivéInput" placeholder="lieu d'arrivé" >
-                
-              </div>
-              <div class="mb-3">
-                <label for="PrixInput" class="form-label">Prix</label>
-                <input type="number" class="form-control" id="PrixInput">
-              </div>
-            </div>
-            <div>
-            <select class="form-select form-select-sm" aria-label="Small select example">
-              <option selected>selectionné votre véhicule</option>
-              <option value="1">renault capture</option>
-              <option value="2">nissan juke</option>
-    
-            </select>
-            </div>
-            <br>
-          
-            <div class="text-center">
-            <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#creditmoindeux" >recherchez</button> 
-            </div>
-            <br>
+    <h5>Démarrer une course ?</h5>
+<div class="container">
+  <form id="form-ajout-trip">
+    <div class="mb-3">
+      <label for="departInput" class="form-label">Départ</label>
+      <input type="text" class="form-control" name="depart" id="departInput" placeholder="Lieu de départ">
+    </div>
 
+    <div class="mb-3">
+      <label for="arriveeInput" class="form-label">Arrivée</label>
+      <input type="text" class="form-control" id="arriveeInput" name="arrivee" placeholder="Lieu d'arrivée">
+    </div>
+
+    <div class="mb-3">
+      <label for="dateInput" class="form-label">Date et Heure</label>
+      <input type="datetime-local" class="form-control" name="date-heure"id="dateInput">
+    </div>
+
+    <div class="mb-3">
+      <label for="prixInput" class="form-label">Prix</label>
+      <input type="number" class="form-control" name="prix"id="prixInput">
+    </div>
+
+    <div class="mb-3">
+      
+      <select id="trip-vehicle-select" name="vehicle_id" required>
+  <option value="">-- Sélectionner un véhicule --</option>
+</select>
+    </div>
+
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary">Valider</button>
+    </div>
+  </form>
+</div>
 
 
 

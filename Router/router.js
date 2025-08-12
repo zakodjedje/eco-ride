@@ -53,6 +53,17 @@ if (actualRoute.pathJS) {
       && typeof module.initCovoiturage === "function") {
       module.initCovoiturage();
     }
+    if (actualRoute.url === "/account" && typeof module.initAccountPage === "function") {
+      module.initAccountPage();
+    }
+
+    if (actualRoute.url === "/signin" && typeof module.initSignin === "function") {
+      module.initSignin();
+    }
+
+    if (actualRoute.url === "/signup" && typeof module.initSignup === "function") {
+      module.initSignup();
+    }
   });
 }
 
