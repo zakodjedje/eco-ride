@@ -58,7 +58,8 @@ export function initAddTripForm() {
     const formData = new FormData(form);
     fetch('http://localhost:8000/add-trip.php', {
       method: 'POST',
-      body: formData
+      body: formData,
+      credentials: 'include' 
     })
       .then(resp => resp.json())
       .then(data => {
