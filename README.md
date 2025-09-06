@@ -1,5 +1,5 @@
 # eco-ride
-ecoride application de covoiturage
+ecoride application web de covoiturage permettrant au utilisateur de rechercher un trajet à partager
 
 ## Technologies
 - Front : HTML5, CSS3, Bootstrap, JavaScript (ES6)
