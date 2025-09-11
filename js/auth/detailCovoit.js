@@ -1,10 +1,11 @@
-// detailCovoit.js
+
 
 // On écoute les clics sur le document pour capturer ceux sur le bouton valider
 document.addEventListener("click", function(e) {
   if (e.target && e.target.id === "btnValidateCredit") {
     e.preventDefault();
 
+// On appel le fetch en indiquant l'url avec lequel on va communiquer
     fetch("http://localhost:8000/session-user.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -16,7 +17,7 @@ document.addEventListener("click", function(e) {
       console.log("📦 Réponse du serveur :", response);
       if (response.connected) {
         alert("✅ crédit retiré");
-        // Fermeture du modal Bootstrap
+        
         const modalEl = document.getElementById("creditvalidé");
         if (modalEl) {
           const modal = bootstrap.Modal.getInstance(modalEl);

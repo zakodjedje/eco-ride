@@ -5,7 +5,7 @@ export function loadUserVehicles() {
   console.log('📥 Chargement des véhicules utilisateur…');
 
   fetch('http://localhost:8000/get-user-cars.php',{
-    credentials: 'include' // 👉 envoie le cookie de session
+    credentials: 'include' //  envoie le cookie de session
   }
 
   )

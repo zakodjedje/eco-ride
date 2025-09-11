@@ -3,7 +3,7 @@ console.log('🚗 Initialisation du module addCar.js');
 
 // Fonction d’initialisation du formulaire d’ajout de véhicule
 export function initAddCarForm() {
-  console.log('📄 Initialisation du formulaire ajout de véhicule');
+  console.log('Initialisation du formulaire ajout de véhicule');
 
   const form = document.querySelector('#form-ajout-car');
   if (!form) {
