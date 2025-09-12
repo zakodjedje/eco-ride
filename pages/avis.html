@@ -1,5 +1,37 @@
 <h1 class="text-center">Les avis</h1>
 
+
+
+<!-- Trip de référence (caché ou rempli via JS/URL) -->
+<input type="hidden" id="tripRef" value="170N" />
+
+<section>
+  <h3>Déposer un avis</h3>
+  <form id="form-avis">
+    <label>Note (1-5) :
+      <input type="number" id="note" min="1" max="5" required />
+    </label>
+    <label>Commentaire :
+      <textarea id="commentaire" maxlength="1000"></textarea>
+    </label>
+    <button id="avis-submit" type="submit">Envoyer</button>
+  </form>
+</section>
+
+<section>
+  <h3>Avis</h3>
+  <div id="avis-stats"></div>
+  <ul id="avis-list"></ul>
+</section>
+
+<script src="avis.js"></script>
+
+
+
+
+
+
+
 <div class="card" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title"> julien <i class="bi bi-star"></i></h5>
